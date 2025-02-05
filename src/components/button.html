@@ -1,0 +1,22 @@
+<script props>
+  // Please look at READ ME before first use
+  module.exports = {
+    width: props.width || "350",
+    leading: props.leading || "20",
+    padding: props.padding || "8px 0px",
+    height: props.height || "46",
+    bgColor: props.bgColor || "#008080",
+    rounded: props.rounded || "5",
+    href: props.href || "https://www.publicisgroupe.com/",
+    borderWidth: props.borderWidth || "0",
+    borderColor: props.borderColor || "#008080",
+    verticalAlign: props.verticalAlign || "middle",
+    color: props.color || "#FFFFFF",
+    class: props.class
+  };
+</script>
+
+<!--[if mso]><v:roundrect xmlns_v="urn:schemas-microsoft-com:vml" xmlns_w="urn:schemas-microsoft-com:office:word" href=[[href]] style="height:[[`${height}px`]];v-text-anchor:[[verticalAlign]];width:[[`${width}px`]];" arcsize="[[`${rounded/height*100}%`]]" strokecolor=[[borderColor]] fillcolor="[[`${borderColor}`]];width [[`${width}px`]];"><w:anchorlock/><center class="[[class]] font-primary text-xl text-bgwhite">Ut enim ad minim veniam</center></v:roundrect><![endif]-->
+<a target="_blank" class="[[class]]" href=[[href]] style="background-color:[[bgColor]];border-radius:[[`${rounded/height*100}%`]];color:[[color]];display:inline-block;mso-hide:all;font-size:20px;font-weight:700;line-height:24px;padding: [[padding]];text-align:center;text-decoration:none;width:[[`${width}px`]];-webkit-text-size-adjust:none;letter-spacing: 0px;font-family: Arial, Helvetica, sans-serif;">Ut enim ad minim veniam</a>
+
+

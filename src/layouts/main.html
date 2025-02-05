@@ -1,0 +1,61 @@
+<!DOCTYPE [[[ page.doctype || 'html' ]]]>
+<html
+  lang="[[ page.language || 'en' ]]"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+>
+  <head>
+    <meta charset="[[ page.charset || 'utf-8' ]]" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no"/>
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
+    <link rel="icon" href="images/publicis_fav-icon.png" sizes="32x32">
+    <style data-embed>
+      img + div {
+        display: none !important;
+      }
+    </style>
+    <!--[if mso]>
+    <noscript>
+        <xml>
+        <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+    <!--[if lte mso 16]><style type="text/css">a,body,div,p,span,table,td{font-family: Arial, Helvetica, sans-serif !important;mso-line-height-rule:exactly;}.msoFix{mso-table-lspace:-1pt;mso-table-rspace:-1pt}</style><![endif]-->
+    <if condition="page.title">
+      <title>[[[ page.title ]]]</title>
+    </if>
+    <style>
+      [[[ page.css ]]]
+    </style>
+    <style>
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: inherit !important;
+    }
+
+    {{{ page.css }}}
+  </style>
+  <block name="head"></block>
+    <if condition="page.env === 'frame'">
+      <script defer src="scripts/redactor.js" type="module"></script>
+    </if>
+  </head>
+  <body
+    class="m-0 p-0 w-full [word-break:break-word] [-webkit-font-smoothing:antialiased] [[ page.bodyClass || '' ]]"
+  >
+  <if condition="page.preheader">
+    <div class="hidden">
+      {{{ page.preheader }}}
+      <each loop="item in Array.from(Array(150))">&#847; </each>
+    </div>
+  </if>
+  <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
+    <block name="template"></block>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+---
+
+title: "Publicis Groupe Email"
+
+preheader: "Publicis Groupe Email Pre-Header"
+---
+
+<extends src="src/layouts/main.html">
+  <block name="template">
+  <table class="mx-auto font-primary align-center-table bg-deepak-lightwhite">
+    <tr>
+      <td class="w-[600px] sm:w-full bg-deepak-white align-center-table max-w-[600px]">
+        <table class="w-full">
+          <!-- Section 01 -->
+          <component src="src/components/sections/section_01.html"></component>
+          <tr>
+            <td>
+              <!-- Section 02 -->
+              <x-sections.section-02 />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!-- Section 03 -->
+              <x-sections.section-03 />
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <!-- Section 04 -->
+    <component src="src/components/sections/section_04.html"></component>
+  </table>
+</block>
+</extends>
